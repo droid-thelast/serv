@@ -1,0 +1,47 @@
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+    <div class="title-bar-title">SmartHub</div>
+</div>
+
+<div class="top-bar" id="example-menu">
+    <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text"><a href="{{ url_for('index') }}"> SmartHub</a></li>
+            <li>
+                <a href="#1">About</a>
+                <ul class="menu vertical">
+                    <li>
+                        <a href="{{ url_for('corporate') }}">Corporate</a>
+                    </li>
+                    <li>
+                        <a href="#">Our Store</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="{{ url_for('huawei') }}">Huawei</a>
+            </li>
+            <li>
+                <a href="{{ url_for('smarthub') }}">SmartHub</a>
+            </li>
+        </ul>
+    </div>
+    <div class="top-bar-right">
+        <ul class="menu">
+            <form action="">
+                <li>
+                    <div class="input-group">
+                        <input class="input-group-field" type="text">
+                        <div class="input-group-button">
+                            <input type="submit" class="button" value="Search">
+                        </div>
+                    </div>
+                </li>
+            </form>
+
+        </ul>
+    </div>
+</div>
